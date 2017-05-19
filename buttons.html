@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<link href="buttons.css" rel="stylesheet" type="text/css">
+
+<script src = 'buttons.js' type="text/javascript"></script>
+<title>CloudIQ Buttons</title>
+<style>
+	/* Ignore these styles */
+	body {
+		background-color: #fff;
+	}
+	div#global-container{
+	  display: block;
+	  width: 95%;
+	  max-width: 1400px;
+	  background-color: #fff;
+	  margin: auto;
+	  margin-top:25px;
+	}
+	#logo {
+	   position: relative;
+	   display: inline-block;
+	   vertical-align: top;
+	   top: 75px;
+	   left: 50%; 
+	   width:300px;       
+	   -webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%); 
+	   -ms-transform: translate(-50%, -50%); 
+	   -o-transform: translate(-50%, -50%); 
+	   transform: translate(-50%, -50%); 
+	}
+
+</style>
+</head>
+
+<body>
+	<div id="global-container">
+	  <div><img src="CloudIQLogo.svg" alt="CIQ Logo" id="logo"></div>
+	  <h1 class="ciq-headline" style="text-align:center; margin:0 auto;padding-top:40px">CloudIQ Buttons</h1>
+
+	  <table>
+			<tr>
+				<th><p>CSS Class</p></th>
+				<th><p>Preview</p></th>
+			</tr>
+			<tr>
+				<td><p class="ciq-caption">.dropdown</p></td>
+				<td>  
+						<div class="dropdown">
+					  <div onclick="openDropdown()" class="dropbtn dropdown-default" id='dropdown-title'> Dropdown 1 <img src="downarrow.svg" alt="downarrow" id="downarrow"> <img src="uparrow.svg" alt="uparrow" id="uparrow"> </div>
+					  <div id="dropdown1" class="dropdown-content">
+					    <a href="#">Option 1</a>
+					    <a href="#">Option 2</a>
+					    <a href="#">Option 3</a>
+					  </div>
+					</div>
+					<p class="ciq-caption">Notes: When the dropdown is open, the arrow direction changes. 	
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td><p class="ciq-caption">button.blue-bg raised-button</p></td>
+				<td><button class="blue-bg raised-button material">Button</button>
+
+				<p class="ciq-caption">Note: This is your primary <b>raised</b> button style. Use this for one call-to-action at a time.</p></td>
+			</tr>
+
+			<tr>
+				<td><p class="ciq-caption">button.blue-bg raised-button-disabled</p></td>
+				<td>
+				<button class="blue-bg raised-button-disabled">Button</button>
+
+				<p class="ciq-caption">Note: Use the <b>disabled</b> button when the button is not clickable. </p></td>
+			</tr>
+
+
+
+			<tr>
+				<td><p class="ciq-caption">button.gray-bg raised-button</p></td>
+				<td>
+				<button class="gray-bg raised-button material">Button</button>
+				<p class="ciq-caption">Note: This is your secondary <b>raised</b> button style. Use this for actions with less emphasis, such as to dismiss or navigate to a new window.</p></td>
+			<tr>
+
+			<tr>
+				<td><p class="ciq-caption">button.gray-bg raised-button-disabled</p></td>
+				<td>
+				<button class="gray-bg raised-button-disabled">Button</button>
+				<p class="ciq-caption">Note: Use the <b>disabled</b> button if the button is not clickable.</p></td>
+			<tr>
+				<td><p class="ciq-caption">button.blue-bg flat-button</p></td>
+				<td><button class="blue-txtbtn flat-button">Button</button>
+				<p class="ciq-caption">Note: This is your primary <b>flat</b> button style. Use this for one call-to-action at a time.</p></td>
+			</tr>
+
+			<tr>
+				<td><p class="ciq-caption">button.blue-txtbtn-disabled flat-button</p></td>
+				<td>
+				<button class="blue-txtbtn-disabled flat-button">Button</button>
+				<p class="ciq-caption">Note: This is your primary <b>flat</b> button style. Use this for one call-to-action at a time.</p></td>
+			</tr>
+
+			<tr>
+				<td><p class="ciq-caption">button.gray-bg flat-button</p></td>
+				<td><button class="gray-txtbtn flat-button">Button</button><p class="ciq-caption">Note: This is your secondary <b>flat</b> button style. Use this for actions with less emphasis, such as to dismiss or navigate to a new window.</p></td>
+			</tr>
+
+			<tr>
+				<td><p class="ciq-caption">button.gray-bg flat-button</p></td>
+				<td><button class="gray-txtbtn-disabled flat-button">Button</button><p class="ciq-caption">Note: This is your secondary <b>flat</b> button style. Use this for actions with less emphasis, such as to dismiss or navigate to a new window.</p></td>
+			</tr>
+		</table>
+
+			
+	
+		
+</body>
+</html>
