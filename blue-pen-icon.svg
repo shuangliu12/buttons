@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>pen icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pen-icon" fill="#007DB8">
+            <g id="Group-2" transform="translate(22.500000, 27.000000) rotate(45.000000) translate(-22.500000, -27.000000) translate(16.000000, -5.000000)">
+                <path d="M0,0 L13,0 L13,53.498779 L6.68323765,63.834857 L0,53.498779 L0,0 Z M0,50.2288099 L0,53.1825385 L13,53.1825385 L13,50.2288099 L0,50.2288099 Z M0,7.87660958 L0,10.8303382 L13,10.8303382 L13,7.87660958 L0,7.87660958 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
